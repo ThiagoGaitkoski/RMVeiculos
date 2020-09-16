@@ -42,7 +42,7 @@ header nav.pc ul li{
     float: left;
     font-size: 23px;
     padding: 0 30px;
-    font-family: italic;
+    font-style: italic;
 }
 
 header nav.pc a{
@@ -62,6 +62,47 @@ section.banner{
     background-repeat: no-repeat;
 }
 
+.text-banner{
+    padding: 100px;
+}
+
+.text-banner-single{
+    font-style: italic;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    width: 314px;
+    height: 60px;
+    color: white;
+    font-size: 23px;
+    background-image: url("../imagem/box-text.png");
+    background-size: 100% 100%;
+}
+
+.text-banner .text-banner-single:nth-of-type(2){
+    width: 250px;
+    height: 60px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3){
+    width: 200px;
+    height: 60px;
+    position: relative;
+    left: -18px;
+}
+
+.text-banner .text-banner-single:nth-of-type(4){
+    font-size: 21px;
+    width: 320px;
+    height: 60px;
+    color: black;
+    position: relative;
+    left: -30px;
+    background-image: url("../imagem/box-white-text.png");
+}
+
 @media screen and (max-width: 1400px){
     section.banner{
         background-size: 90% auto;
@@ -75,5 +116,21 @@ section.banner{
         background-position: center;
         height: 70vw;
         min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    nav.pc{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .text-banner{
+        padding: 30px;
+    }
+    
+    .text-banner-single{
+        font-size: 18px;
     }
 }
