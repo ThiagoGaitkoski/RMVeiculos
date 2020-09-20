@@ -163,7 +163,7 @@ section.destaque .container{
     background-color: black;
 }
 
-section.destaque .line-titulo h2{
+.line-titulo h2{
     position: relative;
     background-color: white;
     display: inline-block;
@@ -203,11 +203,8 @@ section.destaque .line-titulo h2{
     text-align: left;
 }
 
-.vitrine a{
+.btn1{
     text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-left: 8px;
     color: white;
     font-size: 16px;
     font-style: italic;
@@ -217,11 +214,94 @@ section.destaque .line-titulo h2{
     background-color: #EB2D2D;
     text-decoration: none;
     border-bottom: 4px solid #B21E1E;
+    cursor: pointer;
 }
 
-section.servicos{
-    width: 100%;
+.vitrine a{
+    margin-top: 10px;
+    margin-left: 8px;
+}
 
+.servicos{
+    display: flex;
+}
+
+.half1{
+    width: 50%;
+    text-align: right;
+    padding: 90px 2%;
+    background-color: #242424;
+    color: white;
+}
+
+.half1-wraper{
+    padding-right: 30%;
+    text-align: left;
+    display: inline-block;
+}
+
+.half1-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.half1-wraper ul{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.half1-wraper li{
+    margin-left: 15px;
+}
+
+.half1-wraper a{
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.half2 .depoimento-single{
+    margin-top: 19px;
+}
+
+.depoimento-single p{
+    font-size: 21px;
+}
+
+.setas{
+    float: left;
+    width: 100%;
+    max-width: 700px;
+    margin-top:  30px;
+}
+
+.setas img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.flecha{
+    float: left;
+}
+
+.nome{
+    float: right;
+    color: #252525;
+    font-size: 23px;
 }
 
 @media screen and (max-width: 1400px){
@@ -229,6 +309,25 @@ section.servicos{
         background-size: 90% auto;
         background-position: 200% 100%;
     }
+}
+
+@media screen and (max-width: 1210px){
+
+    .half1{
+        text-align: center;
+    }
+
+    .half1-wraper{
+        text-align: left;
+        padding-right: 0;
+    }
+
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (max-width: 1024px){
@@ -240,7 +339,25 @@ section.servicos{
     }
 }
 
+@media screen and (max-width: 800px){
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
 @media screen and (max-width: 768px){
+
+    section.servicos{
+        flex-direction: column;
+    }
+
+    .half1, .half2{
+        padding: 80px 4%;
+        width: 100%;
+    }
+
     nav.pc{
         display: none;
     }
