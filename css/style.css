@@ -519,6 +519,63 @@ section.venda{
     margin-top: 20px;
 }
 
+section.venda-single{
+    padding: 0 2%;
+}
+
+section.venda-single .container{
+    padding: 40px 0;
+    max-width: 1000px;
+}
+
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding: 20px;
+}
+
+.descricao-veiculo p{
+    margin-top: 25px;
+    max-width: 360px;
+}
+
+.descricao-veiculo a{
+    margin-top: 15px;
+}
+
+.nav-galeria{
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.nav-galeria-wraper{
+    width: 200%;
+}
+
+.mini-img{
+    float: left;
+    border: 7px solid white;
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(33.3% * (100 / 200) * 0.4);
+    width: calc(33.3% * 100 / 200);
+}
+
 @media screen and (max-width: 1400px){
     section.banner{
         background-size: 90% auto;
