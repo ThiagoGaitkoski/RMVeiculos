@@ -61,6 +61,11 @@ header nav.mb li{
     font-size: 23px;
     padding: 20px 0;
     font-style: italic;
+    border-bottom: 2px solid grey;
+}
+
+header nav.mb li:last-child{
+    border: none;
 }
 
 nav.mb li a{
